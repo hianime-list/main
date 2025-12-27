@@ -1,0 +1,42 @@
+:root {
+  --bg: #0b1020;
+  --card: #121a33;
+  --text: #e8ecff;
+  --muted: #b7c0ff;
+  --accent: #7aa2ff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 20% 0%, #1a2a6c55, transparent), var(--bg);
+  color: var(--text);
+}
+
+.wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
+
+header { padding-top: 56px; padding-bottom: 24px; }
+h1 { font-size: 42px; margin: 0 0 8px; }
+p { margin: 0 0 16px; color: var(--muted); }
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #0b1020;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card {
+  background: color-mix(in oklab, var(--card) 90%, black 10%);
+  border: 1px solid #2a3870;
+  border-radius: 16px;
+  padding: 16px;
+}
+code { background: #00000033; padding: 2px 6px; border-radius: 6px; }
+
+footer { padding: 24px; color: var(--muted); }
